@@ -2,7 +2,7 @@
 Lembretes de situações que não ocorrem no dia-a-dia.
 
 <h1>Índice</h1>
-<h2>1 - Cobo IIB</h2>
+<h1>1 - Cobo IIB</h1>
 <a href="#C1">- Array na requisição e resposta</a><br>
 
 <h2> <a name="C1"> - Array na requisição e resposta</ a></h2>
