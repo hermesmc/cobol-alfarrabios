@@ -20,29 +20,32 @@ Lembretes de situações que não ocorrem no dia-a-dia.
   
   Área de entrada:
   
-       01 DJOF165-TOTAL                     PIC  X(130).
+       01 EXEMPLO-TOTAL                     PIC  X(130).
   
   Area de saída
   
-       01 DJOPE165-TX-LNH                   PIC  X(130).
-       01 FILLER REDEFINES DJOPE165-TX-LNH.
-           03 DJOPE165-NR-CONTA             PIC  X(019).
-           03 DJOPE165-S1                   PIC  X(001).
-           03 DJOPE165-DT-ABERTURA          PIC  X(010).
-           03 DJOPE165-S2                   PIC  X(001).
-           03 DJOPE165-COMARCA              PIC  X(050).
-           03 DJOPE165-S3                   PIC  X(001).
-           03 DJOPE165-VARA                 PIC  X(040).
-           03 DJOPE165-S4                   PIC  X(008).
+       01 EXEMPLO-TX-LNH                   PIC  X(130).
+       01 FILLER REDEFINES EXEMPLO-TX-LNH.
+           03 EXEMPLO-NR-CONTA            PIC  X(019).
+           03 EXEMPLO-S1                   PIC  X(001).
+           03 EXEMPLO-DT-ABERTURA          PIC  X(010).
+           03 EXEMPLO-S2                   PIC  X(001).
+           03 EXEMPLO-COMARCA              PIC  X(050).
+           03 EXEMPLO-S3                   PIC  X(001).
+           03 EXEMPLO-VARA                 PIC  X(040).
+           03 EXEMPLO-S4                   PIC  X(008).
            
    Sintaxe do UNSTRING           
            
-           UNSTRING DJOF165-TOTAL
+           UNSTRING EXEMPLO-TOTAL
               DELIMITED BY ';'         INTO
-                 DJOPE165-NR-CONTA
-                 DJOPE165-DT-ABERTURA
-                 DJOPE165-COMARCA
-                 DJOPE165-VARA
+                 EXEMPLO-NR-CONTA
+                 EXEMPLO-DT-ABERTURA
+                 EXEMPLO-COMARCA
+                 EXEMPLO-VARA
            END-UNSTRING.
   
+            MOVE ';'     TO EXEMPLO-S1
+                            EXEMPLO-S2
+                            EXEMPLO-S3.
   
