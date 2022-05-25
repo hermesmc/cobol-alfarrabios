@@ -26,7 +26,7 @@ Lembretes de situações que não ocorrem no dia-a-dia.
   
        01 EXEMPLO-TX-LNH                   PIC  X(130).
        01 FILLER REDEFINES EXEMPLO-TX-LNH.
-           03 EXEMPLO-NR-CONTA            PIC  X(019).
+           03 EXEMPLO-NR-CONTA             PIC  X(019).
            03 EXEMPLO-S1                   PIC  X(001).
            03 EXEMPLO-DT-ABERTURA          PIC  X(010).
            03 EXEMPLO-S2                   PIC  X(001).
